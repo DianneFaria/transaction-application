@@ -1,0 +1,28 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Node modules
+node_modules/
+
+# Diretórios de build
+dist/
+build/
+
+# Arquivos temporários e de cache
+.cache/
+*.local
+
+# Arquivos específicos de sistema
+.DS_Store
+
+# Configurações do editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

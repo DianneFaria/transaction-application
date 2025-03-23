@@ -1,0 +1,95 @@
+/* Título da lista */
+.title-list {
+  margin-top: 20px; /* Espaço superior */
+  font-size: 32px; /* Tamanho da fonte */
+  margin-bottom: 32px; /* Espaço inferior */
+  color: black; /* Cor do texto */
+}
+
+.table-container {
+  width: 700px; /* Largura da tabela */
+  background-color: white; /* Cor de fundo */
+}
+
+/* Cabeçalho da tabela */
+.top-table {
+  background-color: #f4f6f9; /* Cor de fundo */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilos de células no cabeçalho e corpo da tabela */
+.top-table th, .body-table td {
+  padding: 12px 20px; /* Espaçamento interno */
+  border-bottom: 1px solid #ddd; /* Linha inferior */
+  text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Linhas do corpo da tabela (pares) */
+.body-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Cor de fundo para linhas pares */
+}
+
+/* Efeito de hover nas linhas da tabela */
+.body-table tr:hover {
+  background-color: #e3f2fd; /* Cor de fundo ao passar o mouse */
+}
+
+/* Linha da tabela com posicionamento relativo */
+.line-table {
+  position: relative; /* Posicionamento relativo */
+}
+
+/* Quebra de palavras nas células */
+table > td {
+  word-wrap: break-word; /* Quebra de palavras */
+}
+
+/* Estilo para lista vazia */
+.empty-list {
+  padding: 16px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  color: #856404; /* Cor do texto */
+  background-color: #fff3cd; /* Cor de fundo */
+  border-color: #ffeeba; /* Cor da borda */
+}
+
+/* Barra de rolagem para a tabela */
+.scroll-tabela {
+  overflow-y: auto; /* Rolagem vertical */
+  max-height: 400px; /* Altura máxima */
+  overflow-x: hidden; /* Sem rolagem horizontal */
+}
+
+/* Botão de confirmação */
+.confirm-button {
+  width: 200px; /* Largura do botão */
+  padding: 10px; /* Padding interno */
+  background-color: #293f69; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover no botão de confirmação */
+.confirm-button:hover {
+  background-color: #4a5f9b; /* Cor ao passar o mouse */
+}
+
+/* Botão de cancelamento */
+.cancel-button {
+  width: 200px; /* Largura do botão */
+  padding: 10px; /* Padding interno */
+  background-color: #882b2b; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover no botão de cancelamento */
+.cancel-button:hover {
+  background-color: #c95151; /* Cor ao passar o mouse */
+}

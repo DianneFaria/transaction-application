@@ -1,0 +1,49 @@
+/* Estilo SideBar */
+.sidebar {
+  position: fixed; /* Fixa à esquerda */
+  left: 0; /* Posiciona à esquerda */
+  top: 0; /* Posiciona no topo */
+  width: 260px; /* Largura da barra */
+  height: 100%; /* Altura total */
+  background-color: #343a40; /* Cor de fundo */
+  padding: 20px 14px; /* Padding interno */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Alinha em coluna */
+  z-index: 999; /* Fica sobre outros elementos */
+}
+
+/* Parte superior da barra */
+.sidebar-top {
+  display: flex; /* Flexbox */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Espaça itens */
+  margin-bottom: 28px; /* Espaço abaixo */
+  padding-bottom: 4px; /* Espaço inferior */
+}
+
+/* Título "Menu" */
+.sidebar-brand {
+  color: white; /* Cor do texto */
+}
+
+/* Links do menu */
+.menu-link {
+  width: 100%; /* Largura total */
+  display: flex; /* Flexbox */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: flex-start; /* Alinha à esquerda */
+  padding: 12px; /* Padding interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  color: white; /* Cor do texto */
+}
+
+/* Link ativo */
+.menu-link.active {
+  color: #0069d9; /* Cor azul */
+  box-shadow: 0px 0px 4px rgba(71, 91, 232, 0.04); /* Sombra suave */
+}
+
+/* Ícones dos links */
+.menu-link-icon {
+  margin-right: 10px; /* Espaço à direita */
+}

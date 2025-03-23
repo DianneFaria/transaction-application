@@ -1,0 +1,119 @@
+/*Estilo do container principal*/
+.card-container {
+    background-color: #343a40; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor do container */
+    width: 500px; /* Largura fixa */
+    margin-top: 50px; /* Margem superior */
+    color: white; /* Cor do texto */
+    transition: transform 0.3s ease; /* Transição suave  */
+}
+
+/* Efeito de hover no container - aumenta levemente o tamanho */
+.card-container:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do container em 5% */
+}
+
+/* Estilo do título principal da página */
+.title {
+    text-align: center; /* Alinha o texto ao centro */
+    color: #f1f1f1; /* Cor do texto */
+    font-size: 32px; /* Tamanho da fonte */
+    margin-bottom: 28px; /* Espaçamento inferior */
+}
+
+/* Estilo do subtítulo */
+.sub-title {
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #f1f1f1; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    margin-bottom: 24px; /* Espaçamento inferior */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Estilo para os containers de cada campo de entrada */
+.label-container {
+    margin-bottom: 16px; /* Margem inferior */
+}
+
+/* Estilo das labels dos campos de entrada */
+.label-container label {
+    display: block; /* Exibe como bloco para garantir que ocupe toda a largura */
+    color: #f1f1f1; /* Cor do texto */
+}
+
+/* Estilo para os campos de input */
+.label-container input {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f1f1f1; /* Cor de fundo  */
+    color: #333; /* Cor do texto */
+    box-sizing: border-box; /* Garante que o padding e borda sejam incluídos no tamanho total */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para o container dos botões */
+.button-register {
+    width: 100%; /* Largura total */
+    height: 95px; /* Altura fixa */
+    display: flex; /* Exibe os botões em linha */
+    justify-content: space-between; /* Espaço entre os botões */
+    flex-direction: column; /* Coloca os botões em coluna */
+    margin-top: 32px; /* Margem superior */
+}
+
+/* Estilo para os botões */
+.button {
+    padding: 10px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Efeito de hover nos botões - muda a cor de fundo */
+.button:hover {
+    background-color: #0069d9; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilo das mensagens de erro e sucesso */
+.error-message, .success-message {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 15px; /* Margem inferior */
+    font-weight: bold; /* Texto em negrito */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: #721c24; /* Cor do texto em vermelho para erro */
+    background-color: #f8d7da; /* Cor de fundo clara para erro */
+    border-color: #f5c6cb; /* Cor da borda para erro */
+}
+
+/* Estilo para a mensagem de sucesso */
+.success-message {
+    color: #155724; /* Cor do texto em verde para sucesso */
+    background-color: #d4edda; /* Cor de fundo clara para sucesso */
+    border-color: #c3e6cb; /* Cor da borda para sucesso */
+}
+
+/* Estilo para o campo de seleção (dropdown) */
+.dropdown {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno*/
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f1f1f1; /* Cor de fundo */
+    color: #333; /* Cor do texto em cinza escuro */
+    box-sizing: border-box; /* Garante que o padding e borda sejam incluídos no tamanho total */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Efeito de hover no campo de seleção - muda a cor de fundo */
+.dropdown:hover {
+    background-color: #e0e0e0; /* Cor de fundo mais escura ao passar o mouse */
+}
