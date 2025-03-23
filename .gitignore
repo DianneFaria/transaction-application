@@ -1,7 +1,3 @@
-# Logs
-logs/
-*.log
-npm-debug.log*
 
 # Node modules
 node_modules/
@@ -26,3 +22,52 @@ build/
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorar arquivos de build
+bin/
+obj/
+
+# Ignorar arquivos de usuário específicos
+.vs/
+.vscode/
+.idea/
+
+# Arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos de dependências do npm (caso use npm)
+node_modules/
+
+# Arquivos de pacotes NuGet
+*.nupkg
+*.snupkg
+
+# Arquivos do Visual Studio
+.vs2019/
+.vs2017/
+.vs2015/
+.vsconfig
+
+# Arquivos do Visual Studio for Mac
+.vscode/
+
+# Arquivos de caches e backups
+# Caches de pacote do NuGet
+.nuget/
+
+# Arquivos de build
+dist/
+build/
+
+# Arquivos de configuração do projeto .NET
+project.lock.json
+project.fragment.lock.json
