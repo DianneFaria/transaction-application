@@ -15,9 +15,4 @@ public class PersonModel
     {
         Name = name;
     }
-
-    public void SetInactive()
-    {
-        Name = "desativado";
-    }
 }
