@@ -1,3 +1,3 @@
 ﻿namespace Person.Models;
 
-public record PersonRequest(string name);
+public record PersonRequest(string name, int idade);

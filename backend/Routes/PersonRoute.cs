@@ -10,7 +10,7 @@ public static class PersonRoute{
         route.MapPost("",
             async (PersonRequest req, PersonContext context, CancellationToken ct) =>
             {
-                var person = new PersonModel(req.name);
+                var person = new PersonModel(req.name, req.idade);
                 await context.AddAsync(person, ct);
                 await context.SaveChangesAsync(ct);
             });
@@ -21,8 +21,8 @@ public static class PersonRoute{
             return Results.Ok(people);
         });
 
-        route.MapPut("{id:guid}",
-            async (Guid id, PersonRequest req, PersonContext context, CancellationToken ct) =>
+        route.MapPut("{id:int}",
+            async (int id, PersonRequest req, PersonContext context, CancellationToken ct) =>
             {
                 var person = await context.People.FirstOrDefaultAsync(x => x.Id == id, ct);
                 
@@ -30,13 +30,14 @@ public static class PersonRoute{
                     return Results.NotFound();
                 
                 person.ChangeName(req.name);
+                person.ChangeAge(req.idade);
                 await context.SaveChangesAsync(ct);
 
                 return Results.Ok(person);
             });
 
-        route.MapDelete("{id:guid}", 
-            async (Guid id, PersonContext context, CancellationToken ct) =>
+        route.MapDelete("{id:int}", 
+            async (int id, PersonContext context, CancellationToken ct) =>
         {
             var person = await context.People.FirstOrDefaultAsync(x => x.Id == id, ct);
             
