@@ -36,7 +36,7 @@ function CreatePerson() {
             //Envia os dados para o backend
             const response = await api.post("/person", {
                 name: newPerson.name,
-                age: newPerson.age,
+                idade: newPerson.age,
             });
             // Se a requisição for bem-sucedida, exibe a mensagem de sucesso
             setSuccessMessage("Person successfully registered!");

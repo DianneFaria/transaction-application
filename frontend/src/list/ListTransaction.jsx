@@ -49,10 +49,10 @@ function ListTransaction() {
                                     {transaction.map((transac) => (
                                         <tr key={transac.id} className="line-table">
                                             <td>{transac.id}</td>
-                                            <td>{transac.description}</td>
-                                            <td>{transac.value}</td>
-                                            <td>{transac.type}</td>
-                                            <td>{transac.person.id}</td>
+                                            <td>{transac.descricao}</td>
+                                            <td>{transac.valor}</td>
+                                            <td>{transac.tipo}</td>
+                                            <td>{transac.pessoaId}</td>
                                         </tr>
                                     ))}
                                 </tbody>

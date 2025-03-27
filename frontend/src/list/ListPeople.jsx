@@ -35,7 +35,6 @@ function ListPeople() {
     async function deletePerson(id) {
         try {
             const response = await api.delete(`/person/${id}`); //Requisição para deletar pessoa
-            setPeople(response.data);
         } catch (error) {
             console.error("Error when deleting person:", error); // Exibindo erro caso ocorra
         } finally {
@@ -92,7 +91,7 @@ function ListPeople() {
                                         <tr key={person.id} className="line-table">
                                             <td>{person.id}</td>
                                             <td>{person.name}</td>
-                                            <td>{person.age}</td>
+                                            <td>{person.idade}</td>
                                             {/* Botão para adicionar uma transação */}
                                             <td><button onClick={() => handleAddTransaction(person.id, 
                                                                                         person.name)}>
@@ -122,7 +121,7 @@ function ListPeople() {
                         Tem certeza que deseja DELETAR o usuário abaixo? <br /> 
                         ID: {selectedPerson?.id} <br />
                         Nome: {selectedPerson?.name} <br />
-                        Idade: {selectedPerson?.age} <br />
+                        Idade: {selectedPerson?.idade} <br />
                         Todas as transações vinculadas a ele(a) também serão deletadas.
                     </DialogContentText>
                 </DialogContent>

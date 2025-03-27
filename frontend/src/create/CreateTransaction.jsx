@@ -43,10 +43,10 @@ function CreateTransaction() {
         try {
             // Envia os dados para o backend
             const response = await api.post("/transaction", {
-                description: newTransaction.description,
-                value: numericValue,
-                type: newTransaction.type,
-                personId: id,
+                descricao: newTransaction.description,
+                valor: numericValue,
+                tipo: newTransaction.type,
+                pessoaId: id,
             });
             // Se a requisição for bem-sucedida, exibe a mensagem de sucesso
             setSuccessMessage("Transaction successfully registered!");

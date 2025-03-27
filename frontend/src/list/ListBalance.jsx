@@ -49,10 +49,10 @@ function ListBalance() {
                                     {balance.map((balanc) => (
                                         <tr key={balanc.id} className="line-table">
                                             <td>{balanc.id}</td>
-                                            <td>{balanc.name}</td>
-                                            <td>{balanc.totalReceita}</td>
-                                            <td>{balanc.totalDespesa}</td>
-                                            <td>{balanc.balance}</td>
+                                            <td>{balanc.nome}</td>
+                                            <td>{balanc.totalReceitas}</td>
+                                            <td>{balanc.totalDespesas}</td>
+                                            <td>{balanc.saldo}</td>
                                         </tr>
                                     ))}
                                 </tbody>

@@ -7,15 +7,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace backend.Migrations
 {
-    [DbContext(typeof(PersonContext))]
-    partial class PersonContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(AppDbContext))]
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
 
-            modelBuilder.Entity("Person.Models.PersonModel", b =>
+            modelBuilder.Entity("backend.Models.PersonModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,7 +33,7 @@ namespace backend.Migrations
                     b.ToTable("People");
                 });
 
-            modelBuilder.Entity("TransactionModel", b =>
+            modelBuilder.Entity("backend.Models.TransactionModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -65,13 +65,13 @@ namespace backend.Migrations
                     b.ToTable("Transactions");
                 });
 
-            modelBuilder.Entity("TransactionModel", b =>
+            modelBuilder.Entity("backend.Models.TransactionModel", b =>
                 {
-                    b.HasOne("Person.Models.PersonModel", null)
+                    b.HasOne("backend.Models.PersonModel", null)
                         .WithMany("Transactions")
                         .HasForeignKey("PersonModelId");
 
-                    b.HasOne("Person.Models.PersonModel", "Pessoa")
+                    b.HasOne("backend.Models.PersonModel", "Pessoa")
                         .WithMany()
                         .HasForeignKey("PessoaId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -80,7 +80,7 @@ namespace backend.Migrations
                     b.Navigation("Pessoa");
                 });
 
-            modelBuilder.Entity("Person.Models.PersonModel", b =>
+            modelBuilder.Entity("backend.Models.PersonModel", b =>
                 {
                     b.Navigation("Transactions");
                 });

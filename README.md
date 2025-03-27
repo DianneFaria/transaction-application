@@ -53,3 +53,18 @@ A aplicação estará disponível em:
 ```
 http://localhost:5173
 ```
+
+
+Passo a passo de criação
+
+dotnet new webapi --name backend -minimal //Criar projeto
+dotnet new sln -n Application //Criar solution
+dotnet sln Application.sln add (path completo do arquivo backend.csproj) //Adicionar projeto na solution
+
+dotnet run --project "C:\Users\diann\OneDrive\Área de Trabalho\repositorios\transaction-application\backend\backend.csproj"
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 9.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.3
+dotnet ef migrations add Inicial // Comando para a migration
+dotnet ef database update // atualizar migrations
+dotnet add package Microsoft.AspNetCore.Cors
