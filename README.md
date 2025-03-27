@@ -17,7 +17,7 @@ Implementar um sistema de controle de gastos residenciais.
 
 •	Modelagem de Banco de Dados.
 
-## Regras de negócio
+## 📝 Regras de negócio
 •	Em casos que se delete uma pessoa, todas a transações dessa pessoa deverão ser apagadas;
 
 •	Caso o usuário informe um menor de idade (menor de 18), apenas despesas deverão ser aceitas;
@@ -26,8 +26,7 @@ Implementar um sistema de controle de gastos residenciais.
 
 
 ## 🔧 Tecnologias utilizadas
- ![REACT](https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react)
- ![GITHUB](https://img.shields.io/badge/GitHub-0B1320?style=for-the-badge&logo=github&logoColor=white)
+ [![My Skills](https://skillicons.dev/icons?i=cs,dotnet,react,npm,html,css,sqlite,vscode,github)](https://skillicons.dev)
 
  ## ⬇Guia de Instalação
 
